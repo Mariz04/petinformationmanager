@@ -1,2 +1,72 @@
-/* For information on how to create your own theme, please refer to:
-http://ionicframework.com/docs/theming/ */
+:root {
+  --pim-pink: #f472b6;
+  --pim-pink-dark: #db2777;
+  --pim-pink-soft: #fce7f3;
+  --pim-bg: #fff7fb;
+  --pim-ink: #3f2937;
+  --pim-muted: #6b7280;
+  --pim-white: #ffffff;
+  --pim-border: #f9c5dc;
+  --pim-shadow: 0 10px 30px rgba(244, 114, 182, 0.12);
+  --pim-shadow-hover: 0 16px 40px rgba(244, 114, 182, 0.22);
+  --pim-radius: 20px;
+  --pim-radius-sm: 14px;
+  --pim-font: 'Nunito', system-ui, sans-serif;
+  --pim-display: 'Quicksand', 'Nunito', system-ui, sans-serif;
+
+  --ion-font-family: var(--pim-font);
+  --ion-color-primary: #f472b6;
+  --ion-color-primary-rgb: 244, 114, 182;
+  --ion-color-primary-contrast: #ffffff;
+  --ion-color-primary-contrast-rgb: 255, 255, 255;
+  --ion-color-primary-shade: #d764a0;
+  --ion-color-primary-tint: #f580bd;
+
+  --ion-background-color: #fff7fb;
+  --ion-background-color-rgb: 255, 247, 251;
+  --ion-text-color: #3f2937;
+  --ion-text-color-rgb: 63, 41, 55;
+
+  --ion-toolbar-background: #ffffff;
+  --ion-toolbar-color: #3f2937;
+  --ion-item-background: #ffffff;
+  --ion-card-background: #ffffff;
+}
+
+html,
+body,
+ion-app,
+ion-content {
+  font-family: var(--pim-font);
+  color: var(--pim-ink);
+  background: var(--pim-bg);
+}
+
+ion-content {
+  --background: var(--pim-bg);
+}
+
+@keyframes pim-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes pim-fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.pim-fade-up {
+  animation: pim-fade-up 0.55s ease both;
+}

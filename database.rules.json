@@ -1,0 +1,12 @@
+{
+  "rules": {
+    "pets": {
+      ".read": true,
+      ".write": true
+    },
+    "counters": {
+      ".read": true,
+      ".write": true
+    }
+  }
+}
